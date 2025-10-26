@@ -1,0 +1,96 @@
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* Forzamos esquema claro */
+    color-scheme: light;
+    color: #000; /* texto negro por defecto */
+    background-color: #f8f7f3; /* fondo suave */
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enlaces */
+a {
+    font-weight: 500;
+    color: inherit; /* hereda negro por defecto */
+    text-decoration: none;
+}
+a:hover {
+    opacity: 0.8;
+}
+
+/* Body */
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #f8f7f3;
+    color: #000;
+    display: block; /* quitamos flex que centraba todo */
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    margin: 0;
+}
+
+/* Botones */
+button {
+    border-radius: 8px;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #28a745; /* verde principal */
+    color: #fff; /* texto blanco */
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+button:hover {
+    opacity: 0.9;
+}
+button:focus,
+button:focus-visible {
+    outline: 3px solid rgba(40, 167, 69, 0.5);
+}
+
+/* Tarjetas */
+.card {
+    padding: 2em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    color: #000;
+}
+
+/* App container */
+#app {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* ocupa todo el ancho */
+    text-align: left; /* dejamos alineación natural */
+}
+
+/* Footer */
+footer {
+    color: #000;
+    background: #f8f7f3;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Quitamos modo oscuro automático */
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #000;
+        background-color: #f8f7f3;
+    }
+}

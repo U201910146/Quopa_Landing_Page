@@ -1,0 +1,6 @@
+Inicio
+Sobre Quopa
+Funcionalidades
+Beneficios
+Equipo
+Preguntas Frecuentes
